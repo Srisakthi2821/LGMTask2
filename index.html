@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/20c5629a29.js" crossorigin="anonymous"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300&family=Foldit&family=Oswald:wght@300&family=Sofia+Sans+Condensed&display=swap');
+    </style>
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xl-6 col-12">
+                <div class="container_1">
+                    <h1 class="regn_header">App Registration Form <i class="far fa-clipboard"></i></h1>
+                    <div class="">
+                        <label for="name" class="label_name">Full Name :</label>
+                        <input type="text" id="name" class="name_input" required placeholder="Enter Your Name Here">
+                    </div>
+                    <div class="input_container">
+                        <label for="username" class="label_name">User Name :</label>
+                        <input type="text" id="username" class="name_input" required placeholder="Enter Your Name Here">
+                    </div>
+                    <div class="input_container">
+                        <label for="emailAddress" class="label_name">Email id :</label>
+                        <input id="emailAddress" class="name_input" type="email" name="uname" required placeholder="Yourgmail@gmail.com" pattern=".+@gmail\.com" title="Please provide only a Best Startup Ever corporate email address" />
+                    </div>
+                    <div class="input_container">
+                        <label for="mobilenumber" class="label_name">Mobile NO :</label>
+                        <input type="number" id="mobilenumber" class="name_input" required placeholder="eg : +91 9876 5432 1">
+                    </div>
+                    <div class="input_container">
+                        <label name="gender_label" class="label_name">Gender :</label>
+                        <input type="radio" id="male" name="sex" class="radio_input" required value="Male"><label for="male" class="sex_name" id="">Male</label>
+                        <input type="radio" id="female" name="sex" class="radio_input" required value="Female"><label for="female" class="sex_name" id="">Female</label>
+                        <input type="radio" id="not_to_say" name="sex" class="radio_input" required value="Prefer Not to Say"><label for="not_to_say" class="sex_name" id="">Prefer Not to Say</label>
+                    </div>
+                    <div class="input_container">
+                        <label for="passwordinput" class="label_name">Password :</label>
+                        <input type="password" id="passwordinput" class="name_input" required placeholder="Enter your password   ">
+                    </div>
+                    <div class="text-center">
+                        <button class="button_add" id="add_button">Add</button>
+                    </div>
+                </div>
+            </div>
+            <hr class="vertical-line">
+            <div class="col-xl-6 col-12">
+                <div class="container_details" id="details_container">
+                    <h1 class="Heading_nocards" id="nouser">There is no User registered Yet.</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>  
+</body>
+
+</html>
